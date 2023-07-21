@@ -1,0 +1,16 @@
+:root {
+    
+    --main-font-family: 'Roboto', sans-serif;
+    --logo-font-family: 'Raleway', sans-serif;
+
+
+    --maine-color-text: black;
+    --background-color: aliceblue;
+    
+}
+
+body {
+    font-family: var(--main-font-family);
+    color: var(--maine-color-text);
+    background-color: var(--background-color);
+}
