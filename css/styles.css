@@ -69,7 +69,6 @@
     /* #endregion Logo */
 
     /* #endregion typography */
-
 }
 
 body {
@@ -89,7 +88,6 @@ nav>ul {
     color: var(--color-dark);
 }
 
-
 a {
     text-decoration: none;
     color: inherit;
@@ -99,7 +97,6 @@ a:hover, a:active {
     text-decoration: inherit;
     color: var(--color-pressed-state);
 }
-
 
 ul {
     list-style: none;
@@ -150,17 +147,13 @@ header {
 
 .menu {
     font-weight: var(--body-medium-font-weight);
- 
- 
 }
 
 .menu a:hover, .menu a:active{
-    
     border-bottom: 4px solid var(--color-pressed-state);
     border-radius: 2px;
     padding-bottom: 20px;
 }
-
 
 /* #endregion Navigation */
 
@@ -168,8 +161,6 @@ header {
 
 address {
     font-style: normal;
-    /* width: 344px;
-    height: 24px; */
 }
 
 /* #endregion Contacts */
@@ -179,12 +170,9 @@ address {
 /* #region Hero */
 
 .hero {
-
     background-color: var(--color-dark);
     width: 1440px;
     height: 600px;
-
-
 }
 
 h1 {
@@ -225,7 +213,6 @@ background: var(--color-pressed-state);
 
 /* #region Advantages */
 .advantages {
-
     width: 1440px;
     height: 282px;
 }
@@ -254,7 +241,6 @@ h3 {
 
 /* #region What are we doing */
 .our-activities {
-
     width: 1440px;
     height: 584px;
 }
@@ -265,14 +251,12 @@ h3 {
 }
 
 .center {
-
     text-align: center;
 }
 
 /* #endregion What are we doing */
 
 /* #region Our Team */
-
 
 .our-team {
     background-color: var(--color-light);
@@ -288,7 +272,6 @@ h3 {
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-
 
 /* #endregion Our Team */
 
@@ -313,7 +296,6 @@ footer p {
     background-color: var(--color-light);
     padding: 12px 24px;
     border: 1px solid var(--color-accent);
-    
 }
 
 .filter .button:hover,
