@@ -62,7 +62,7 @@
 
     /* #region Logo */
     --logo-font-family: 'Relevay', sans-serif;
-    --logo-font-weight: ExtraBold;
+    --logo-font-weight: 800;
     --logo-font-size: 18px;
     --logo-letter-spacing: 0.03;
     --logo-line-height: calc(21px/18px);
@@ -80,8 +80,6 @@ body {
     line-height: var(--line-height);
     color: var(--color-text);
     background-color: var(--color-white-background);
-
-
 }
 
 h1,
@@ -97,15 +95,11 @@ a {
     color: inherit;
 }
 
-a:hover {
+a:hover, a:active {
     text-decoration: inherit;
     color: var(--color-pressed-state);
 }
 
-a:active {
-    text-decoration: inherit;
-    color: inherit;
-}
 
 ul {
     list-style: none;
@@ -149,15 +143,24 @@ footer .logo-studio {
 header {
     width: 1440px;
     height: 72px;
+    border-bottom: 1px solid var(--cornflower, #E7E9FC);
 }
 
 /* #region Navigation */
 
 .menu {
     font-weight: var(--body-medium-font-weight);
-    /* width: 261px;
-    height: 24px; */
+ 
+ 
 }
+
+.menu a:hover, .menu a:active{
+    
+    border-bottom: 4px solid var(--color-pressed-state);
+    border-radius: 2px;
+    padding-bottom: 20px;
+}
+
 
 /* #endregion Navigation */
 
@@ -197,15 +200,25 @@ h1>span {
     text-transform: capitalize;
 }
 
+.button {
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    font-weight: var(--button-font-weight);
+    letter-spacing: var(--button-letter-spacing);
 
-
-section.hero>button {
+}
+.hero .button {
     color: var(--color-white-background);
     background-color: var(--color-primary-brand);
-    border-radius: 4px;
-    width: 169px;
-    height: 56px;
-    border: none;
+    padding: 16px 32px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.hero .button:hover,
+.hero .button:active {
+background: var(--color-pressed-state);
+
 }
 
 /* #endregion Hero */
@@ -276,6 +289,7 @@ h3 {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
+
 /* #endregion Our Team */
 
 /* #region Footer */
@@ -292,3 +306,29 @@ footer p {
 }
 
 /* #endregion Footer */
+
+/* #region Portfolio */
+.filter .button {
+    color: var(--color-primary-brand);
+    background-color: var(--color-light);
+    padding: 12px 24px;
+    border: 1px solid var(--color-accent);
+    
+}
+
+.filter .button:hover,
+.filter .button:active {
+    color: var(--color-light);
+    background-color: var(--color-primary-brand);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    border: none;
+}
+
+.portfolio-card {
+    width: 360px;
+    height: 420px;
+    border: 1px solid var(--cornflower, #E7E9FC);
+    background-color: var(--color-white-background);
+}
+/* #endregion Portfolio */
+
