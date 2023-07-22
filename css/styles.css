@@ -1,16 +1,294 @@
 :root {
-    
-    --main-font-family: 'Roboto', sans-serif;
-    --logo-font-family: 'Raleway', sans-serif;
+    /* #region colors*/
+    --color-primary-brand: #4D5AE5;
+    --color-pressed-state: #404BBF;
+    --color-dark: #2E2F42;
+    --color-success: #31D0AA;
+    --color-text: #434455;
+    --color-subtle-text: #8E8F99;
+    --color-accent: #E7E9FC;
+    --color-light: #F4F4FD;
+    --color-modal-overlay: #2E2F42;
+    --color-hero-background: #2E2F42;
+    --color-white-background: #FFFFFF;
+    --color-mdal-background: #FCFCFC;
+    /* #endregion colors */
 
+    /* #region typography */
 
-    --maine-color-text: black;
-    --background-color: aliceblue;
-    
+    --font-family: 'Roboto', sans-serif;
+    --font-weight: 400;
+    --font-size: 16px;
+    --letter-spacing: 0.02;
+    --line-height: calc(24px/16px);
+
+    /* #region Title/Header 1 */
+    --h1-font-weight: 700;
+    --h1-font-size: 56px;
+    --h1-line-height: calc(60px/56px);
+    /* #endregion Title/Header 1 */
+
+    /* #region Header 2 */
+    --h2-font-weight: 700;
+    --h2-font-size: 36px;
+    /* #endregion Header 2 */
+
+    /* #region Header 3 */
+    --h3-font-weight: 500;
+    --h3-font-size: 20px;
+    /* #endregion Header 3 */
+
+    /* #region Small */
+    --small-font-size: 12px;
+    --small-line-height: calc(14px/12);
+    --small-letter-spacing: 0.04;
+    /* #endregion Small */
+
+    /* #region Body Medium */
+    --body-medium-font-weight: 500;
+    /* #endregion Body Medium */
+
+    /* #region Button Text */
+    --button-font-weight: 500;
+    --button-letter-spacing: 0.04;
+    /* #endregion Button Text */
+
+    /* #region Link */
+    --link-font-size: 12px;
+    --link-line-height: calc(16px/12px);
+    --link-letter-spacing: 0.04;
+    --link-decoration: Underline;
+    /* #endregion Link */
+
+    /* #region Logo */
+    --logo-font-family: 'Relevay', sans-serif;
+    --logo-font-weight: ExtraBold;
+    --logo-font-size: 18px;
+    --logo-letter-spacing: 0.03;
+    --logo-line-height: calc(21px/18px);
+    /* #endregion Logo */
+
+    /* #endregion typography */
+
 }
 
 body {
-    font-family: var(--main-font-family);
-    color: var(--maine-color-text);
-    background-color: var(--background-color);
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    font-size: var(--font-size);
+    letter-spacing: var(--letter-spacing);
+    line-height: var(--line-height);
+    color: var(--color-text);
+    background-color: var(--color-white-background);
+
+
 }
+
+h1,
+h2,
+h3,
+nav>ul {
+    color: var(--color-dark);
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: inherit;
+    color: var(--color-pressed-state);
+}
+
+a:active {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* #region Logo */
+
+.logo-web,
+.logo-studio {
+    font-family: var(--logo-font-family);
+    font-weight: var(--logo-font-weight);
+    font-size: var(--logo-font-size);
+    letter-spacing: var(--logo-letter-spacing);
+    line-height: var(--logo-line-height);
+    text-transform: uppercase;
+}
+
+.logo-web {
+    color: var(--color-primary-brand);
+}
+
+/* #region logo header */
+
+header .logo-studio {
+    color: var(--color-dark);
+}
+
+/* #endregion logo header */
+
+/* #region logo footer */
+
+footer .logo-studio {
+    color: var(--color-light);
+}
+
+/* #endregion logo footer */
+/* #endregion Logo */
+
+/* #region Header */
+
+header {
+    width: 1440px;
+    height: 72px;
+}
+
+/* #region Navigation */
+
+.menu {
+    font-weight: var(--body-medium-font-weight);
+    /* width: 261px;
+    height: 24px; */
+}
+
+/* #endregion Navigation */
+
+/* #region Contacts */
+
+address {
+    font-style: normal;
+    /* width: 344px;
+    height: 24px; */
+}
+
+/* #endregion Contacts */
+
+/* #endregion Header */
+
+/* #region Hero */
+
+.hero {
+
+    background-color: var(--color-dark);
+    width: 1440px;
+    height: 600px;
+
+
+}
+
+h1 {
+    width: 496px;
+    height: 120px;
+    font-weight: var(--h1-font-weight);
+    font-size: var(--h1-font-size);
+    line-height: var(--h1-line-height);
+    color: var(--color-white-background);
+}
+
+h1>span {
+    text-transform: capitalize;
+}
+
+
+
+section.hero>button {
+    color: var(--color-white-background);
+    background-color: var(--color-primary-brand);
+    border-radius: 4px;
+    width: 169px;
+    height: 56px;
+    border: none;
+}
+
+/* #endregion Hero */
+
+/* #region Advantages */
+.advantages {
+
+    width: 1440px;
+    height: 282px;
+}
+
+.hidden {
+    display: none;
+}
+
+.block {
+    display: inline-block;
+    width: 264px;
+    height: 104px;
+}
+
+h2 {
+    font-weight: var(--h2-font-weight);
+    font-size: var(--h2-font-size);
+}
+
+h3 {
+    font-weight: var(--h3-font-weight);
+    font-size: var(--h3-font-size);
+}
+
+/* #endregion Advantages */
+
+/* #region What are we doing */
+.our-activities {
+
+    width: 1440px;
+    height: 584px;
+}
+
+.horizontal-list {
+    display: flex;
+    list-style: none;
+}
+
+.center {
+
+    text-align: center;
+}
+
+/* #endregion What are we doing */
+
+/* #region Our Team */
+
+
+.our-team {
+    background-color: var(--color-light);
+    width: 1440px;
+    height: 732px;
+}
+
+.card {
+    text-align: center;
+    width: 284px;
+    height: 360px;
+    background-color: var(--color-white-background);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+/* #endregion Our Team */
+
+/* #region Footer */
+footer {
+    background-color: var(--color-dark);
+    width: 1440px;
+    height: 312px;
+}
+
+footer p {
+    color: var(--color-light);
+    width: 264px;
+    height: 72px;
+}
+
+/* #endregion Footer */
